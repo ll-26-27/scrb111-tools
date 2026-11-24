@@ -38,7 +38,7 @@ For each video:
   "stills": [
     {
       "candidate": "c07-02m14s.jpg",
-      "caption": "What is on screen, in a sentence. Text on a slide or drawing is quoted exactly as it appears.",
+      "caption": "What is on screen, in a sentence. On-screen text is quoted exactly as it appears.",
       "why": "Why this frame is worth keeping."
     }
   ]

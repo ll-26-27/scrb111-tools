@@ -1,6 +1,6 @@
 # scrb111-tools
 
-A Claude Code pack for SCRB 111. Point it at a folder of student videos and it produces, for each video, a transcript, a set of stills, and follow-up questions to ask the student, and then one HTML report on all of them.
+A Claude Code pack for SCRB 111. Point it at a folder of the final-project videos and it produces, for each video, a transcript, a set of stills, and follow-up questions to ask the pair in class, and then one HTML report on all of them.
 
 Built on Marlon's `video-assignment-tools` (`ll-26-27/video-assignment-tools`), November 24, 2026, and split into four skills with a `_context/` folder of course materials that steer them.
 
@@ -56,9 +56,10 @@ In the report, clicking a timestamp or a still plays the video from that moment.
 
 Claude reads everything in `_context/` before it chooses stills or writes anything. See `_context/README.md`.
 
-- `_context/guides/` holds the instructions for each step, written as prose: what a good still is, what a good follow-up question is, what the report's overview should say. Edit them freely.
-- `_context/course/` is for the assignment prompt, the paper, the syllabus, a rubric, and `terms.md` (names and technical terms for the transcriber to spell right). The more is here, the more specific the questions.
-- `_context/private/` is for anything that should inform the work but not be published. It is gitignored.
+- `_context/guides/` holds the instructions for each step, written as prose: what a good still is, how the professor asks follow-up questions, what the report's overview should say. Edit them freely.
+- `_context/course/` has the course description, the final project guidelines, and the rubric. Add `terms.md` (names and technical terms for the transcriber to spell right) once this year's topics are known.
+- `_context/prompts/` keeps the 2024 and 2025 question prompts the questions guide was built from.
+- `_context/private/` is for anything that should inform the work but not be published, such as past transcripts with the questions the professor asked. It is gitignored.
 
 ## Running the scripts yourself
 

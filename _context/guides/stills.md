@@ -1,30 +1,32 @@
-# Choosing stills from a student's video
+# Choosing stills from a SCRB 111 final-project video
 
-*Working draft, November 24, 2026. This file is the professor's to rewrite: the stills skill reads all of it every time.*
+*November 24, 2026. This file is the professor's to rewrite: the stills skill reads all of it every time.*
 
-A kept still is a picture the professor would want beside the transcript: something on screen that the words alone don't carry.
+Each video is a pair of students presenting a concept in stem cell and regenerative biology to the general public, in about five minutes. A kept still is a picture the professor would want beside the transcript: something on screen that the words alone don't carry, and above all whatever the students are showing when they explain how something works.
 
 ## Keep
 
-- **The student's visual.** The drawing, diagram, poster, or slide they are presenting from, at the moment it is most complete and most legible. If it builds up over the video, keep the stages that differ meaningfully and the final state.
-- **What a question points at.** If the transcript says "as you can see here" or "this arrow", keep the frame that shows what "here" is. If no candidate has it, pull one at that time.
-- **Figures and data.** Any figure from the paper, gel, plot, micrograph, or table that appears, framed so it can be read.
-- **Text on screen.** Titles, labels, equations, citations.
-- **One frame of the setting.** A single frame that shows how the video was made (at a whiteboard, over a sheet of paper, screen recording, talking to camera) is enough.
+- **The visual that carries the explanation.** A drawing, diagram, animation frame, prop, or image that shows the mechanism in the meaty section: the cell, the protein, the steps. If it builds up over time, keep the stages that differ meaningfully and the final state.
+- **What the words point at.** When the transcript says "here we see," "this," or "as you can see," keep the frame that shows what is meant. If no candidate has it, pull one at that time.
+- **The analogy, if it is pictured.** The videos lean on analogies for a lay audience; when one appears on screen, keep it at its clearest moment.
+- **Terms and labels on screen.** A term being defined, a title, a labelled diagram, a statistic, a citation.
+- **Data and real images.** A micrograph, a figure, a photograph of the actual thing being discussed.
+- **The presenters.** One frame in which both can be seen, or one of each if they never share the screen.
 
 ## Pass over
 
 - Frames caught mid-transition, mid-gesture, blurred, or with a hand covering the thing being shown.
 - Near-duplicates. If two candidates show the same thing, keep the sharper or more complete one.
-- Extra frames of a face talking. One is plenty.
-- Black frames, blank slides, loading screens.
+- Further frames of someone talking to camera with nothing else on screen.
+- Black frames, blank screens, title cards that repeat.
 
 ## How many
 
-Four to eight per video. A two-minute talk to camera with one drawing may need two; a video that walks through a dozen figures may need twelve. Go by what's on screen, not by the length.
+Four to eight for a five-minute video, spread so the set-up, the meaty section, and the outlook each have at least one if there is anything on screen to show. Go by what's on screen, not by the clock.
 
 ## Captions
 
 - One sentence saying what is on screen. Describe only what the frame shows.
-- Quote text on a slide or drawing exactly as written, including the student's spelling. If it can't be read at this size, say that it's unreadable; don't guess.
-- No judgments in the caption ("a clear diagram"). Those go in `why`, or in the questions' observations.
+- Quote on-screen text exactly as written, including the students' spelling. If it can't be read at this size, say it is unreadable; don't guess.
+- Where the transcript makes it clear, say what is being explained at that moment ("Diagram of a cell with labelled proteins, shown while the students explain how old proteins are tagged").
+- No judgments in the caption. Those go in `why`.

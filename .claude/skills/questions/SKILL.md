@@ -9,7 +9,7 @@ This step is reading and writing by you; the script only checks the result. It n
 
 ## For each video
 
-1. Read `_context/guides/questions.md` in full. It says what the questions are for and what makes a good one. Then read everything in `_context/course/` and `_context/private/` in full: the assignment, the paper the students presented, the professor's reflections. Those decide what is worth asking; where they and the guide disagree, they win.
+1. Read `_context/guides/questions.md` in full. It says what the questions are for and what makes a good one. Then read everything in `_context/course/` and `_context/private/` in full: the course description, the final project guidelines, the rubric, and any past transcripts with the professor's own questions. Those decide what is worth asking; where they and the guide disagree, they win. (`_context/prompts/` holds the earlier prompts the guide was built from; it isn't read during a run.)
 2. Read `outputs/<slug>/manifest.json` and `outputs/<slug>/transcript.md`, all of it.
 3. Look at the stills: the kept ones in `outputs/<slug>/stills/` with their captions in `stills.json` if they have been chosen, otherwise every candidate in `stills/candidates/`. Say what is on screen only if you saw it in a frame.
 4. Write `outputs/<slug>/questions.json`:
@@ -22,14 +22,14 @@ This step is reading and writing by you; the script only checks the result. It n
   "written_at": "<ISO time>",
   "summary": "Two to four plain sentences on what the video does: what it presents, how, with what on screen. Descriptive, not a grade.",
   "observations": [
-    { "at": 42.5, "note": "A specific moment worth noticing, and what's there." }
+    { "at": 42.5, "note": "An anchor: the students' words at this moment, quoted, and why they invite a question." }
   ],
   "questions": [
     {
       "at": 42.5,
-      "question": "The question, as it would be asked to the student.",
+      "question": "The question, as it would be asked to the pair in class.",
       "why": "What it is for: what it might draw out, for the professor reading it.",
-      "kind": "understanding"
+      "kind": "clarity"
     }
   ],
   "uncertain": ["Anything the transcript or frames leave unclear, e.g. a term that may be misheard at 01:12."]
@@ -38,7 +38,7 @@ This step is reading and writing by you; the script only checks the result. It n
 
 - `at` is seconds into the video, taken from a transcript segment's `start` or a still's `at`; `null` for a question about the whole piece.
 - `kind` is one of the kinds named in the guide.
-- How many questions and observations: as the guide says.
+- How many anchors and questions, and their order: as the guide says.
 
 If `_context/course/` is empty, write the questions anyway from the guide alone and say in your report back that they were written without the assignment.
 

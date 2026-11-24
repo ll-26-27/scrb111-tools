@@ -1,6 +1,6 @@
 # scrb111-tools: instructions for Claude
 
-A pack for SCRB 111. A professor points it at a folder of student videos on her computer and gets back transcripts, stills, follow-up questions for each student, and an HTML report. `README.md` is the version for people.
+A pack for SCRB 111. The videos are the final projects: pairs of students presenting a concept in stem cell and regenerative biology to the general public in about five minutes. The professor points this at a folder of them on her computer and gets back transcripts, stills, the follow-up questions she asks each pair in class after the viewing, and an HTML report. `README.md` is the version for people.
 
 ## The flow
 
@@ -34,8 +34,9 @@ Someone can also ask for one step alone ("just transcribe these", "redo the stil
 
 ```
 _context/guides/     how to choose stills, write questions, write the overview: the prompts, in prose
-_context/course/     the assignment, the paper, the syllabus, terms.md
-_context/private/    internal material; gitignored
+_context/course/     the course description, final project guidelines, rubric; terms.md if added
+_context/prompts/    the 2024 and 2025 question prompts the guide was built from; not read during a run
+_context/private/    past transcripts, the professor's own questions, internal material; gitignored
 .claude/skills/      transcription, stills, questions, report; _shared/lib.mjs is their common code
 outputs/             everything made; gitignored
   run.json             the videos folder used last time
@@ -57,7 +58,8 @@ _videos/             an optional place to put videos; gitignored. Any folder on 
 - **`_context/` decides.** The guides say how; `course/` and `private/` say what matters in this course. When the professor's materials and a guide disagree, her materials win. Don't invent course content that isn't there: if `course/` is empty, write from the guides and say so.
 - **Student work stays on this computer.** `outputs/` and `_videos/` are gitignored and stay that way. Nothing made from a video is committed, posted, uploaded, or pasted anywhere. The sound goes only to HUIT for transcription; no other outside service gets any of it.
 - **`_context/private/` never goes into git,** and nothing from it is quoted in a file that does: not in a guide, a skill, the README, or a commit message. It can shape what you write in `outputs/`.
-- **Students are "you" or "the student"** in questions, and videos are named by file name, unless the professor asks for names.
+- **No grades.** The rubric is there so you know what the assignment asked. Nothing you write scores, ranks, or praises a video.
+- **Students are "you"** in questions, and videos are named by file name, unless the professor asks for names.
 - **The key** lives only in `.env`. Never print or commit it.
 - **Scripts** use Node built-ins and ffmpeg only: no packages, no `npm install`. Shared code goes in `.claude/skills/_shared/lib.mjs`.
 - Write Markdown prose without hard wraps.
