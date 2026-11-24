@@ -1,0 +1,18 @@
+# Keys
+.env
+.env.*
+!.env.example
+
+# Internal context: informs the work, never published
+_context/private/*
+!_context/private/README.md
+
+# Student work and everything made from it: local only, never committed
+_videos/*
+!_videos/README.md
+outputs/*
+!outputs/README.md
+
+.claude/settings.local.json
+.DS_Store
+node_modules/
