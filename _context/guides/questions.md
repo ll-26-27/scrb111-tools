@@ -17,7 +17,7 @@ The questions are the ones the professor asks the pair in class after their vide
 - She gives no praise and no general evaluation. Only open-ended questions.
 - Her tone is collegial, curious, supportive, precise.
 
-If `_context/private/` holds past transcripts together with the professor's own questions for them, read each pair before writing. They are the best evidence of what she asks. Match their length and register; don't reuse their wording.
+`_context/examples/` holds four past transcripts and the professor's own questions for each. Read each transcript beside its questions before writing: they are the best evidence of what she asks. Match their length and register; don't reuse their wording.
 
 ## Method
 
@@ -91,6 +91,6 @@ If a question breaks one of these, rewrite it as lightly as possible.
 ## Stay inside the evidence
 
 - You have a transcript and some stills, not the video. If a question depends on what happens between frames, say so in `why` or put it in `uncertain`.
-- The transcriber gets technical terms wrong, often as an ordinary word that sounds similar, and may spell the same term several ways in one transcript. Work out the intended term from context and use the correct spelling in the question; note the correction in `uncertain` with its time. If you can't tell what was said, don't build a question on it.
+- The transcriber gets technical terms wrong, often as an ordinary word that sounds similar ("Protax" for PROTAC and "animal" for enamel in the past transcripts), and may spell the same term several ways in one transcript. Work out the intended term from context and use the correct spelling in the question; note the correction in `uncertain` with its time. If you can't tell what was said, don't build a question on it.
 - The rubric's grading standards are in `_context/course/` so you know what the assignment asked for. Don't apply them: no grades, no rubric language, no ranking of videos.
 - No guesses about the students' personal lives, feelings, or identity, and no student names unless the professor asks for them.

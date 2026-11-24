@@ -14,7 +14,7 @@ Four skills in `.claude/skills/`, each with its own `SKILL.md`; follow them. Run
    node .claude/skills/stills/scripts/stills.mjs candidates "<folder>"
    ```
    With more than a few videos or any long ones, run both in the background and wait for them.
-2. **stills (choose)** and **questions**, per video, once both scripts have finished. Each video: read `_context/` in full, read the whole transcript, look at every candidate, write `stills/stills.json`, then write `questions.json`. With more than two or three videos, one subagent per video, up to 8 at a time.
+2. **stills (choose)** and **questions**, per video, once both scripts have finished. Each video: read `_context/guides/`, `course/`, `examples/`, and `private/` in full, read the whole transcript, look at every candidate, write `stills/stills.json`, then write `questions.json`. With more than two or three videos, one subagent per video, up to 8 at a time.
 3. **Check what was written:**
    ```bash
    node .claude/skills/stills/scripts/stills.mjs keep
@@ -35,8 +35,9 @@ Someone can also ask for one step alone ("just transcribe these", "redo the stil
 ```
 _context/guides/     how to choose stills, write questions, write the overview: the prompts, in prose
 _context/course/     the course description, final project guidelines, rubric; terms.md if added
+_context/examples/   past transcripts and the professor's own questions for them, names removed
 _context/prompts/    the 2024 and 2025 question prompts the guide was built from; not read during a run
-_context/private/    past transcripts, the professor's own questions, internal material; gitignored
+_context/private/    anything with students' names, internal material; gitignored
 .claude/skills/      transcription, stills, questions, report; _shared/lib.mjs is their common code
 outputs/             everything made; gitignored
   run.json             the videos folder used last time
@@ -55,7 +56,7 @@ _videos/             an optional place to put videos; gitignored. Any folder on 
 ## Rules
 
 - **Read whole files.** Every file in `_context/` and every transcript is read from first line to last before writing from it. If a file is too long for one read, read it in consecutive pieces until it is finished. If something can't be read in full, say so first and name what was left out.
-- **`_context/` decides.** The guides say how; `course/` and `private/` say what matters in this course. When the professor's materials and a guide disagree, her materials win. Don't invent course content that isn't there: if `course/` is empty, write from the guides and say so.
+- **`_context/` decides.** The guides say how; `course/`, `examples/`, and `private/` say what matters in this course. When the professor's materials and a guide disagree, her materials win. Don't invent course content that isn't there: if `course/` is empty, write from the guides and say so.
 - **Student work stays on this computer.** `outputs/` and `_videos/` are gitignored and stay that way. Nothing made from a video is committed, posted, uploaded, or pasted anywhere. The sound goes only to HUIT for transcription; no other outside service gets any of it.
 - **`_context/private/` never goes into git,** and nothing from it is quoted in a file that does: not in a guide, a skill, the README, or a commit message. It can shape what you write in `outputs/`.
 - **No grades.** The rubric is there so you know what the assignment asked. Nothing you write scores, ranks, or praises a video.

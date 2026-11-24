@@ -58,8 +58,9 @@ Claude reads everything in `_context/` before it chooses stills or writes anythi
 
 - `_context/guides/` holds the instructions for each step, written as prose: what a good still is, how the professor asks follow-up questions, what the report's overview should say. Edit them freely.
 - `_context/course/` has the course description, the final project guidelines, and the rubric. Add `terms.md` (names and technical terms for the transcriber to spell right) once this year's topics are known.
+- `_context/examples/` has four past transcripts and the questions the professor asked about each, with names removed.
 - `_context/prompts/` keeps the 2024 and 2025 question prompts the questions guide was built from.
-- `_context/private/` is for anything that should inform the work but not be published, such as past transcripts with the questions the professor asked. It is gitignored.
+- `_context/private/` is for anything that should inform the work but not be published, such as transcripts that still carry students' names. It is gitignored.
 
 ## Running the scripts yourself
 

@@ -1,6 +1,6 @@
 # _context
 
-What Claude reads before it chooses stills, writes questions, or writes the report. Everything in `guides/`, `course/`, and `private/` is read whole, every run, so adding or rewriting a file changes what comes out. Plain text and Markdown read best; PDFs work too.
+What Claude reads before it chooses stills, writes questions, or writes the report. Everything in `guides/`, `course/`, `examples/`, and `private/` is read whole, every run, so adding or rewriting a file changes what comes out. Plain text and Markdown read best; PDFs work too.
 
 ## guides/
 
@@ -20,6 +20,10 @@ The course and the assignment.
 
 Add anything else that applies, under any file name. One file has a special use: `terms.md`, a short list of names and technical terms (PROTAC, ubiquitin ligase, enamel, iPSC, organoid …) that the transcriber should spell correctly. Keep it to about 200 words; the transcriber ignores anything beyond that.
 
+## examples/
+
+Four past final-project transcripts and the professor's own follow-up questions for each, with the students' names removed. See `examples/README.md`.
+
 ## prompts/
 
 The earlier prompts for writing follow-up questions, kept whole as the sources `guides/questions.md` was built from and as material to remix. They are not read during a run, since each asks for its own output format; to bring something back from them, move it into the guide.
@@ -29,4 +33,4 @@ The earlier prompts for writing follow-up questions, kept whole as the sources `
 
 ## private/
 
-For material that informs the work but is not published: past student transcripts, the professor's own follow-up questions for them, reflections, internal planning. Everything in `private/` except its README is gitignored, so it stays on this computer and never enters the repository or its history. Claude reads it the same way it reads `course/`. Past transcripts paired with the questions the professor actually asked are the most useful thing that can go here.
+For material that informs the work but is not published: versions of transcripts with students' names, reflections, internal planning. Everything in `private/` except its README is gitignored, so it stays on this computer and never enters the repository or its history. Claude reads it the same way it reads `course/`.

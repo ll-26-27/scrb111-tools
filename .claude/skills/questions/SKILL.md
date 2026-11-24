@@ -9,7 +9,7 @@ This step is reading and writing by you; the script only checks the result. It n
 
 ## For each video
 
-1. Read `_context/guides/questions.md` in full. It says what the questions are for and what makes a good one. Then read everything in `_context/course/` and `_context/private/` in full: the course description, the final project guidelines, the rubric, and any past transcripts with the professor's own questions. Those decide what is worth asking; where they and the guide disagree, they win. (`_context/prompts/` holds the earlier prompts the guide was built from; it isn't read during a run.)
+1. Read `_context/guides/questions.md` in full. It says what the questions are for and what makes a good one. Then read everything in `_context/course/`, `_context/examples/`, and `_context/private/` in full: the course description, the final project guidelines, the rubric, and the past transcripts with the professor's own questions. Those decide what is worth asking; where they and the guide disagree, they win. (`_context/prompts/` holds the earlier prompts the guide was built from; it isn't read during a run.)
 2. Read `outputs/<slug>/manifest.json` and `outputs/<slug>/transcript.md`, all of it.
 3. Look at the stills: the kept ones in `outputs/<slug>/stills/` with their captions in `stills.json` if they have been chosen, otherwise every candidate in `stills/candidates/`. Say what is on screen only if you saw it in a frame.
 4. Write `outputs/<slug>/questions.json`:
